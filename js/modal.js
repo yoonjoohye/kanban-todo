@@ -125,6 +125,9 @@ class Modal {
             if (dueDateInput) dueDateInput.value = '';
             const dueDateText = this.form.querySelector('#modalDueDateText');
             if (dueDateText) dueDateText.textContent = '마감일 선택';
+            // todoId hidden input도 명확히 비움
+            const idInput = this.form.querySelector('#todoId');
+            if (idInput) idInput.value = '';
         }
     }
 
